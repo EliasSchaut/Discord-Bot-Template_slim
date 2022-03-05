@@ -1,0 +1,13 @@
+{
+  "prefix": "<YOUR_PREFIX>",
+  "token": "<YOUR_TOKEN>",
+
+  "role_ids_admin": [ "" ],
+  "user_ids_admin": [ "" ],
+
+  "embed": {
+    "color": "RANDOM",
+    "author_name": "",
+    "avatar_url": ""
+  }
+}
