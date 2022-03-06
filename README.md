@@ -8,7 +8,7 @@ A very slim and easier variant of my [Discord-Bot-Template](https://github.com/E
 * No slash commands or Discord interactions (like buttons or menu) at all
 * No different langs (hard code text in command files)
 * No database
-* No logger (use `console.log()`)
+* No logger (use `console.log`)
 
 ## How to set up and run code
 1. [Set Up](https://github.com/EliasSchaut/Discord-Bot-Template/wiki/Set-up)
