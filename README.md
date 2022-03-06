@@ -15,7 +15,7 @@ A very slim and easier variant of my [Discord-Bot-Template](https://github.com/E
 1. [Run](https://github.com/EliasSchaut/Discord-Bot-Template/wiki/Run)
 
 ## Add a command
-1. Create a new JS file named \<command name\>.js inside the folder `commands`
+1. Create a new JS file named \<command name\>.js inside the folder [`commands`](https://github.com/EliasSchaut/Discord-Bot-Template_slim/tree/main/src/commands)
 2. Fill the newly created JS file with the **command skeleton** below
 3. Fill `name`, `description` and `usage` (used for args clarifications) and also your code to execute
 
