@@ -1,6 +1,7 @@
 # Discord-Bot-Template_slim
 A very slim and easier variant of my [Discord-Bot-Template](https://github.com/EliasSchaut/Discord-Bot-Template):
 * Just reacting to commands from normal discord messages
+* Only one level of hierachy in commands-folder (all commands are directly in commands folder and not in subfolders)
 * Only `name`, `description` and `usage` as command modifications only used by `help` command (also no handler for that)
 * Only `help` command preimplemented
 * Very minor config file
@@ -8,3 +9,14 @@ A very slim and easier variant of my [Discord-Bot-Template](https://github.com/E
 * No different langs
 * No database
 * No logger
+
+## How to set up and run code
+1. [Set Up](https://github.com/EliasSchaut/Discord-Bot-Template/wiki/Set-up)
+1. [Run](https://github.com/EliasSchaut/Discord-Bot-Template/wiki/Run)
+
+## Add a command
+1. Create a new JS file named \<command name\>.js inside the folder `commands`
+2. Fill the newly created JS file with the **command skeleton** below
+3. Fill `name`, `description` and `usage` (used for args clarifications) and also your code to execute
+
+**Command Skeleton**: See [template folder](https://github.com/EliasSchaut/Discord-Bot-Template_slim/blob/main/template/command.js)
