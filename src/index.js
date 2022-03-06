@@ -25,7 +25,7 @@ client.config = require('../config/config.json')
 client.helper = require('./util/cmd_helper')
 client.command_event = require("./handler/command_create")
 
-// dynamically retrieve all command files and additionally save it into msg.client.command_tree
+// dynamically retrieve all command files
 async function load_commands(client) {
     const commandFolder = fs.readdirSync("./src/commands")
     for (const file of commandFolder) {
