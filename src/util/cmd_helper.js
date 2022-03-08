@@ -23,11 +23,11 @@ function is_nsfw_channel(msg) {
 }
 
 // print all commands for the author from message in a human-readable string
-async function commands_to_string(msg) {
+function commands_to_string(msg) {
     let out = ""
 
-    for (const command of Object.keys(msg.client.commands)) {
-        out += `${command.toUpperCase()}**\n`
+    for (const command of msg.client.commands.keys()) {
+        out += `${command}\n`
     }
 
     return out
