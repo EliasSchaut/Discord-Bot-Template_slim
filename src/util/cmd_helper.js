@@ -69,26 +69,6 @@ function trim_text(string, size, use_dots) {
     }
     return string
 }
-
-
-// --------------------
-// Permissions
-// --------------------
-// check if author from message is admin
-function is_admin(msg) {
-    if (from_dm(msg)) {
-        return is_admin_from_dm(msg)
-
-    } else {
-        return is_admin_from_guild(msg)
-    }
-}
-
-// check, if the author from message have all the given permissions as list
-function has_permission(msg, permission_list) {
-    return !from_dm(msg) && msg.member.permissions.has(permission_list)
-}
-// --------------------
 // ----------------------------
 
 
@@ -99,19 +79,7 @@ function has_permission(msg, permission_list) {
 function custom_text_to_link(link, text) {
     return `[${text}](${link})`
 }
-
-// check, if the author from message is an admin when chatting per dm
-function is_admin_from_dm(msg) {
-    return msg.client.config.user_ids_admin.includes(msg.author.id)
-}
-
-// check, if the author from message is an admin when chatting per guild
-function is_admin_from_guild(msg) {
-    return msg.client.config.user_ids_admin.includes(msg.member.id)
-        || msg.member.roles.cache.some(role => msg.client.config.role_ids_admin.includes(role.id))
-}
 // ----------------------------
 
 
-module.exports = { from_guild, from_dm, is_nsfw_channel, is_admin, has_permission,
-    commands_to_string, link_to_dm, link_to_message, trim_text }
+module.exports = { from_guild, from_dm, is_nsfw_channel, commands_to_string, link_to_dm, link_to_message, trim_text }
