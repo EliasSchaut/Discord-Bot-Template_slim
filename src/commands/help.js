@@ -2,7 +2,7 @@
 // The help command provides useful information about all the oder commands. The command works dynamically.
 // If help is called without arguments, it will print all for the author from message executable commands.
 // If help is called with a command name as argument, it prints information about this specific command.
-// Here the help command uses the informations of the given command (like name, description, usage, ...).
+// Here the help command uses the informations of the given command (name, description and usage).
 // ===============================
 
 const { MessageEmbed } = require('discord.js')
