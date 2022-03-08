@@ -21,4 +21,5 @@ A very slim and easier variant of my [Discord-Bot-Template](https://github.com/E
 * No slash commands or Discord interactions (like buttons or menu) at all
 * No different langs (hard code text in command files)
 * No database
+* No bot admins
 * No logger (use `console.log`)
