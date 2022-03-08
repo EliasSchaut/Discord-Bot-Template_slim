@@ -70,11 +70,10 @@ module.exports = {
     // actually generates an embed_msg in help format
     create_embed_help_format(msg, title, description, fields = []) {
         return new MessageEmbed()
-            .setColor(msg.client.config.embed.color)
+            .setColor("RANDOM")
             .setTitle(`${title.toUpperCase()} COMMAND`)
             .setDescription(description)
             .addFields(fields)
-            .setThumbnail(msg.client.config.embed.avatar_url)
     }
     // ----------------------------
 };

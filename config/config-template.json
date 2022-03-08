@@ -1,10 +1,4 @@
 {
   "prefix": "<YOUR_PREFIX>",
-  "token": "<YOUR_TOKEN>",
-
-  "embed": {
-    "color": "RANDOM",
-    "author_name": "",
-    "avatar_url": ""
-  }
+  "token": "<YOUR_TOKEN>"
 }
