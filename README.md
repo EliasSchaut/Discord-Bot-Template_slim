@@ -23,3 +23,4 @@ A very slim and easier variant of my [Discord-Bot-Template](https://github.com/E
 * No database
 * No bot admins
 * No logger (use `console.log`)
+* No Docs-Website
