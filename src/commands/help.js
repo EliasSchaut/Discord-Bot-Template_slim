@@ -24,7 +24,7 @@ module.exports = {
             const command = commands.get(name)
 
             if (!command) {
-                return msg.channel.reply("That's not a valid command!");
+                return msg.reply("That's not a valid command!");
             }
 
             return this.send_specific_command(msg, command)
